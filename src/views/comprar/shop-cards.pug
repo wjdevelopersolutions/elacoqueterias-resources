@@ -1,0 +1,59 @@
+mixin shopCards
+  .row
+    .col-12
+      //- Shop Top
+      .shop-top
+        .shop-shorter
+          .single-shorter
+            label Show :
+            select
+              option(selected='selected') 09
+              option 15
+              option 25
+              option 30
+          .single-shorter
+            label Sort By :
+            select
+              option(selected='selected') Name
+              option Price
+              option Size
+        ul.view-mode
+          li.active
+            a(href='shop-grid.html')
+              i.fa.fa-th-large
+          li
+            a(href='shop-list.html')
+              i.fa.fa-th-list
+      //- End Shop Top
+
+  //- Card
+  if props.productos.length > 0
+    .row
+      each producto in props.productos
+        .col-lg-4.col-md-6.col-12
+          .single-product
+            .product-img
+              a(href='product-details.html')
+                img.default-img(src= producto.Prod_Images[0] alt='#')
+                img.hover-img(src= producto.Prod_Images[1] alt='#')
+                span.new New
+              .button-head
+                .product-action
+                  a(data-toggle='modal' data-target='#exampleModal' title='Quick View' href='#')
+                    i.ti-eye
+                    span Quick Shop
+                  a(title='Wishlist' href='#')
+                    i.ti-heart
+                    span Add to Wishlist
+                  a(title='Compare' href='#')
+                    i.ti-bar-chart-alt
+                    span Add to Compare
+                .product-action-2
+                  a(title='Add to cart' href='#') Add to cart
+            .product-content
+              h3
+                a(href='product-details.html')= producto.Prod_Title
+              .product-price
+                span $#{producto.Prod_Price}
+        //- End card
+    

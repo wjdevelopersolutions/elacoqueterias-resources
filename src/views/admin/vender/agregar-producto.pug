@@ -1,0 +1,39 @@
+extends ../../layout
+
+include ../../components/breadcrumb
+
+
+block body
+
+  +breadcrumb
+
+  .container
+    .row
+      .col-md-12.mt-5
+        h2.text-capitalize= props.pageTitle
+        p.lead Crea tu producto y vendelo en linea
+
+
+    .row
+      .col-md-12.mt-5
+        form#aggrege-product-form(class="form")
+          div(class="row")  
+            div(class="col-lg-6 col-md-6 col-12")
+              div(class="form-group")
+                label(for="Prod_Title") Nombre
+                  span *
+                input.form-control(name="Prod_Title" type="text" placeholder="Nombre del producto")
+              div(class="form-group")
+                label(for="Prod_Price") Precio
+                  span *
+                input.form-control(name="Prod_Price" type="number" step="0.01" placeholder="0")
+              div(class="form-group")
+                label(for="Prod_Images") Imagen
+                  span *
+                input.form-control(name="Prod_Images" type="text" placeholder="Url de la imagen del producto")
+              div(class="form-group")
+                label(for="Prod_Descriptcion") Descripcción
+                  span *
+                textarea(name="Prod_Description" cols="30" rows="10")
+              div(class="form-group")
+                button#aggrege-product-btn(class="btn btn-primary" type="submit") Agregar

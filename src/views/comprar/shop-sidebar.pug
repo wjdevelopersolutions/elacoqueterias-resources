@@ -1,0 +1,126 @@
+mixin shopSidebar
+  .shop-sidebar
+    .single-widget.category
+      h3.title Categories
+      ul.categor-list
+        li
+          a(href='#') T-shirts
+        li
+          a(href='#') jacket
+        li
+          a(href='#') jeans
+        li
+          a(href='#') sweatshirts
+        li
+          a(href='#') trousers
+        li
+          a(href='#') kitwears
+        li
+          a(href='#') accessories
+    // / End Single Widget
+    // Shop By Price
+    .single-widget.range
+      h3.title Shop by Price
+      .price-filter
+        .price-filter-inner
+          #slider-range
+          .price_slider_amount
+            .label-input
+              span Range:
+              input#amount(type='text' name='price' placeholder='Add Your Price')
+      ul.check-box-list
+        li
+          label.checkbox-inline(for='1')
+            input#1(name='news' type='checkbox')
+            | $20 - $50
+            span.count (3)
+        li
+          label.checkbox-inline(for='2')
+            input#2(name='news' type='checkbox')
+            | $50 - $100
+            span.count (5)
+        li
+          label.checkbox-inline(for='3')
+            input#3(name='news' type='checkbox')
+            | $100 - $250
+            span.count (8)
+    // / End Shop By Price
+    // Single Widget
+    .single-widget.recent-post
+      h3.title Recent post
+      // Single Post
+      .single-post.first
+        .image
+          img(src='https://via.placeholder.com/75x75' alt='#')
+        .content
+          h5
+            a(href='#') Girls Dress
+          p.price $99.50
+          ul.reviews
+            li.yellow
+              i.ti-star
+            li.yellow
+              i.ti-star
+            li.yellow
+              i.ti-star
+            li
+              i.ti-star
+            li
+              i.ti-star
+      // End Single Post
+      // Single Post
+      .single-post.first
+        .image
+          img(src='https://via.placeholder.com/75x75' alt='#')
+        .content
+          h5
+            a(href='#') Women Clothings
+          p.price $99.50
+          ul.reviews
+            li.yellow
+              i.ti-star
+            li.yellow
+              i.ti-star
+            li.yellow
+              i.ti-star
+            li.yellow
+              i.ti-star
+            li
+              i.ti-star
+      // End Single Post
+      // Single Post
+      .single-post.first
+        .image
+          img(src='https://via.placeholder.com/75x75' alt='#')
+        .content
+          h5
+            a(href='#') Man Tshirt
+          p.price $99.50
+          ul.reviews
+            li.yellow
+              i.ti-star
+            li.yellow
+              i.ti-star
+            li.yellow
+              i.ti-star
+            li.yellow
+              i.ti-star
+            li.yellow
+              i.ti-star
+      // End Single Post
+    // / End Single Widget
+    // Single Widget
+    .single-widget.category
+      h3.title Manufacturers
+      ul.categor-list
+        li
+          a(href='#') Forever
+        li
+          a(href='#') giordano
+        li
+          a(href='#') abercrombie
+        li
+          a(href='#') ecko united
+        li
+          a(href='#') zara
+  

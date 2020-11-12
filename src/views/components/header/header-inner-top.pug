@@ -1,0 +1,82 @@
+mixin headerInnerTop
+  .middle-inner
+    .container
+      .row
+        .col-lg-2.col-md-2.col-12
+          //- Logo
+          .logo
+            a(href='index.html')
+              img(src='images/logo-turquoise.png' alt='logo')
+          //- / End Logo
+          //- Search Form
+          .search-top
+            .top-search
+              a(href='#0')
+                i.ti-search
+            //- Search Form
+            .search-top
+              form.search-form
+                input(type='text' placeholder='Search here...' name='search')
+                button(value='search' type='submit')
+                  i.ti-search
+            //- / End Search Form
+          //- / End Search Form
+          .mobile-nav
+        .col-lg-8.col-md-7.col-12
+          .search-bar-top
+            .search-bar
+              select
+                option(selected='selected') Categorias
+                option watch
+                option mobile
+                option kid&rsquo;s item
+              form
+                input(name='search' placeholder='Buscar un producto.....' type='search')
+                button.btnn
+                  i.ti-search
+        .col-lg-2.col-md-3.col-12
+          .right-bar
+            //- Search Form
+            .sinlge-bar
+              a.single-icon(href='#')
+                i.fa.fa-heart-o(aria-hidden='true')
+            .sinlge-bar
+              a.single-icon(href='#')
+                i.fa.fa-user-circle-o(aria-hidden='true')
+            .sinlge-bar.shopping
+              a.single-icon(href='#')
+                i.ti-bag
+                span.total-count 2
+              //- Shopping Item
+              .shopping-item
+                .dropdown-cart-header
+                  span 2 Items
+                  a(href='#') View Cart
+                ul.shopping-list
+                  li
+                    a.remove(href='#' title='Remove this item')
+                      i.fa.fa-remove
+                    a.cart-img(href='#')
+                      img(src='https://-via.placeholder.com/70x70' alt='#')
+                    h4
+                      a(href='#') Woman Ring
+                    p.quantity
+                      | 1x - 
+                      span.amount $99.00
+                  li
+                    a.remove(href='#' title='Remove this item')
+                      i.fa.fa-remove
+                    a.cart-img(href='#')
+                      img(src='https://-via.placeholder.com/70x70' alt='#')
+                    h4
+                      a(href='#') Woman Necklace
+                    p.quantity
+                      | 1x - 
+                      span.amount $35.00
+                .bottom
+                  .total
+                    span Total
+                    span.total-amount $134.00
+                  a.btn.animate(href='checkout.html') Checkout
+              //- / End Shopping Item
+  //- Header Inner

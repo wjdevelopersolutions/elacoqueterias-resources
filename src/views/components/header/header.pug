@@ -1,0 +1,13 @@
+include ./top-bar
+include ./header-inner-top
+include ./header-inner-bottom
+
+mixin header(props)
+  header.header.shop
+    +topBar
+    +headerInnerTop
+    +headerInnerBottom(props)
+    
+
+
+  

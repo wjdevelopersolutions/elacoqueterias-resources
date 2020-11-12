@@ -1,0 +1,90 @@
+mixin headerInnerBottom(props)
+  .header-inner
+    .container
+      .cat-nav-head
+        .row
+          if props.pageTitle === 'tienda'
+            .col-lg-3
+              .all-category
+                h3.cat-heading
+                  //- i.fa.fa-bars(aria-hidden='true')
+                  | DEPARTAMENTOS
+
+                ul.main-category
+                  li
+                    a(href='#')
+                      | caballeros 
+                      i.fa.fa-angle-right(aria-hidden='true')
+                    ul.sub-category
+                      li
+                        a(href='#') accessories
+
+                  li.main-mega
+                    a(href='#')
+                      | interiores
+                      i.fa.fa-angle-right(aria-hidden='true')
+                    ul.mega-menu
+                      li.single-menu
+                        a.title-link(href='#') Shop Kid&apos;s
+                        .image
+                          img(src='https://-via.placeholder.com/225x155' alt='#')
+                        .inner-link
+                          a(href='#') Kids Toys
+                          a(href='#') Kids Travel Car
+                          a(href='#') Kids Color Shape
+                          a(href='#') Kids Tent
+                      li.single-menu
+                        a.title-link(href='#') Shop Men&apos;s
+                        .image
+                          img(src='https://-via.placeholder.com/225x155' alt='#')
+                        .inner-link
+                          a(href='#') Watch
+                          a(href='#') T-shirt
+                          a(href='#') Hoodies
+                          a(href='#') Formal Pant
+                      li.single-menu
+                        a.title-link(href='#') Shop Women&apos;s
+                        .image
+                          img(src='https://-via.placeholder.com/225x155' alt='#')
+                        .inner-link
+                          a(href='#') Ladies Shirt
+                          a(href='#') Ladies Frog
+                          a(href='#') Ladies Sun Glass
+                          a(href='#') Ladies Watch
+                  li
+                    a(href='#') accessories
+                
+          .col-lg-9.col-12
+            .menu-area
+              //- Main Menu
+              nav.navbar.navbar-expand-lg
+                .navbar-collapse
+                  .nav-inner
+                    ul.nav.main-menu.menu.navbar-nav
+                      li.active
+                        a(href='/') Tienda
+                      li
+                        a(href='/shop') Ofertas
+                      li
+                        a(href='/services') Servicios
+                      li
+                        a(href='#')
+                          | Yo
+                          i.ti-angle-down
+                          span.new New
+                        ul.dropdown
+                          li
+                            a(href='cart.html') Mi carrito
+                          li
+                            a(href='checkout.html') Mis ordenes
+                      li
+                        a(href='/product/edit-product') Vender
+                      li
+                        a(href='#') Mis productos
+                      li
+                        a(href='#')
+                          | Mi blog
+                          i.ti-angle-down
+                        ul.dropdown
+                          li
+                            a(href='blog-single-sidebar.html') Publicar

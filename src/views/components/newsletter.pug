@@ -1,0 +1,16 @@
+mixin newsletter
+  section.shop-newsletter.section
+    .container
+      .inner-top
+        .row
+          .col-lg-8.offset-lg-2.col-12
+            // Start Newsletter Inner
+            .inner
+              h4 Newsletter
+              p
+                | Subscribe to our newsletter and get 
+                span 10%
+                |  off your first purchase
+              form.newsletter-inner(action='mail/mail.php' method='get' target='_blank')
+                input(name='EMAIL' placeholder='Your email address' required='' type='email')
+                button.btn Subscribe

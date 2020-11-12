@@ -1,0 +1,12 @@
+include ./shop-sidebar
+include ./shop-cards
+
+mixin productStyle
+  section.product-area.shop-sidebar.shop.section
+    .container
+      .row
+        .col-lg-3.col-md-4.col-12
+          +shopSidebar
+        .col-lg-9.col-md-8.col-12
+          +shopCards
+          

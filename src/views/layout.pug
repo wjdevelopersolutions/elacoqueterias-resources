@@ -1,0 +1,83 @@
+include ./components/loader
+include ./components/header/header
+
+<!DOCTYPE html>
+  head
+
+    meta(charset="utf-8")
+    meta(name='copyright' content='')
+    meta(http-equiv="X-UA-Compatible" content="IE=edge")
+    meta(viewport="width=device-width, initial-scale=1, shrink-to-fit=no")
+
+    meta(rel="icon" type="image/png" href="/images/favicon.png")
+    
+    title= title
+
+    link(href="https://-fonts.googleapis.com/css?family=Poppins:200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap" rel="stylesheet")
+    link(rel="stylesheet", href="/bundle.css")
+
+    //-- Eshop template
+    link(rel="stylesheet", href="/css/bootstrap.css")
+    link(rel="stylesheet", href="/css/magnific-popup.min.css")
+    link(rel="stylesheet", href="/css/font-awesome.css")
+    link(rel="stylesheet", href="/css/jquery.fancybox.min.css")
+    link(rel="stylesheet", href="/css/themify-icons.css")
+    link(rel="stylesheet", href="/css/niceselect.css")
+    link(rel="stylesheet", href="/css/animate.css")
+    link(rel="stylesheet", href="/css/flex-slider.min.css")
+    link(rel="stylesheet", href="/css/owl-carousel.css")
+    link(rel="stylesheet", href="/css/slicknav.min.css")
+
+    link(rel="stylesheet", href="/css/reset.css")
+    link(rel="stylesheet", href="/style.css")
+    link(rel="stylesheet", href="/css/responsive.css")
+
+    //- Toastr
+    link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css")
+
+  body(class="js")
+
+    //- Preloader
+    //- +loader
+
+    //- Header
+    +header(props)
+
+
+
+    block body
+
+   
+    script(src='/js/jquery.min.js')
+    script(src='/js/jquery-migrate-3.0.0.js')
+    script(src='/js/jquery-ui.min.js')
+    //- Popper JS
+    script(src='/js/popper.min.js')
+    //- Bootstrap JS
+    script(src='/js/bootstrap.min.js')
+    //- Color JS
+    script(src='/js/colors.js')
+    //- Slicknav JS
+    script(src='/js/slicknav.min.js')
+    //- Owl Carousel JS
+    script(src='/js/owl-carousel.js')
+    //- Magnific Popup JS
+    script(src='/js/magnific-popup.js')
+    //- Waypoints JS
+    script(src='/js/waypoints.min.js')
+    //- Countdown JS
+    script(src='/js/finalcountdown.min.js')
+    //- Nice Select JS
+    script(src='/js/nicesellect.js')
+    //- Flex Slider JS
+    script(src='/js/flex-slider.js')
+    //- ScrollUp JS
+    script(src='/js/scrollup.js')
+    //- Onepage Nav JS
+    script(src='/js/onepage-nav.min.js')
+    //- Easing JS
+    script(src='/js/easing.js')
+    //- Active JS
+    script(src='/js/active.js')
+
+    script(src="/bundle.js")
