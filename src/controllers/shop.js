@@ -11,11 +11,13 @@ export const getShop = (req, res, next) => {
     method: 'get',
     url: 'http://localhost:3000/api/v1/product'
   }).then(productos => {
+
+    console.log(productos.data.result.items);
     
     res.render('comprar/index', {
       props: {
         pageTitle: 'comprar',
-        productos: productos.data.productos
+        productos: productos.data.result.items
       }
     });
   });

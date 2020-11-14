@@ -4,13 +4,10 @@ import cors from 'cors';
 import dotenv from 'dotenv';
 import path from 'path';
 import morgan from 'morgan';
-import connectDB from './config/db';
+
 
 // Load env vars
 dotenv.config({ path: './src/config/config.env' });
-
-// Connect to database
-// connectDB();
 
 // Router files
 import index from './routes/index';
@@ -44,10 +41,10 @@ app.set('node_env', process.env.NODE_ENV);
 const corsOpts = { origin: process.env.CORS_ORIGIN }
 
 // Mount routers
-app.use('/', cors(corsOpts), index);
-app.use('/product', cors(corsOpts), product);
-app.use('/shop', cors(corsOpts), shop);
-app.use('/admin', cors(corsOpts), admin);
+app.use('/', cors(), index);
+app.use('/product', cors(), product);
+app.use('/shop', cors(), shop);
+app.use('/admin', cors(), admin);
 
 
 export default app;
